@@ -1,0 +1,118 @@
+/*======= Image Carousel Start ===========*/
+
+.image-carousel-section {
+	position: relative;
+	float: left;
+	width: 100%;
+	padding-top: 90px;
+	padding-bottom: 135px;
+	background: #fff;
+}
+
+.image-carousel-section .title {
+	float: left;
+	width: 100%;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.image-carousel-section .title h2 {
+	padding-bottom: 5px;
+}
+
+.image-carousel {
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 4px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.image-carousel .image-carousel-track {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.image-carousel .image-carousel-slide {
+	position: relative;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.image-carousel .image-carousel-slide img {
+	display: block;
+	width: 100%;
+	height: 480px;
+	object-fit: cover;
+}
+
+.image-carousel .image-carousel-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 18px 25px;
+	background: rgba(0, 0, 0, 0.55);
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.image-carousel .image-carousel-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	border: none;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.image-carousel .image-carousel-arrow:hover,
+.image-carousel .image-carousel-arrow:focus {
+	background: rgba(0, 0, 0, 0.75);
+	outline: none;
+}
+
+.image-carousel .image-carousel-prev { left: 15px; }
+.image-carousel .image-carousel-next { right: 15px; }
+
+.image-carousel-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.image-carousel-dots button {
+	width: 11px;
+	height: 11px;
+	margin: 0 6px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: #d8d8d8;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.image-carousel-dots button.active {
+	background: #333;
+}
+
+@media (max-width: 767px) {
+	.image-carousel .image-carousel-slide img { height: 260px; }
+	.image-carousel .image-carousel-arrow { width: 36px; height: 36px; line-height: 36px; font-size: 16px; }
+	.image-carousel .image-carousel-caption { font-size: 13px; padding: 12px 15px; }
+}
+
+/*======= Image Carousel End ===========*/
